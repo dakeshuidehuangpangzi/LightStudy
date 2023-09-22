@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.IO.Ports" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DigitaPlatform.Common\DigitaPlatform.Common.csproj" />
+    <ProjectReference Include="..\DigitaPlatform.Entities\DigitaPlatform.Entities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Execute\Modbus\" />
+    <Folder Include="Execute\S7\" />
+    <Folder Include="Execute\OMRON\" />
+    <Folder Include="Execute\MITSUBISHI\" />
+    <Folder Include="Execute\MQTT\" />
+  </ItemGroup>
+
+</Project>

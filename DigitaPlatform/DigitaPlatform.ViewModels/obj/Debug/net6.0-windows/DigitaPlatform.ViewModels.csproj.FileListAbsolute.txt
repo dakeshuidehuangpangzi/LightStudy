@@ -1,0 +1,15 @@
+F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform.ViewModels\bin\Debug\net6.0-windows\DigitaPlatform.ViewModels.deps.json
+F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform.ViewModels\bin\Debug\net6.0-windows\DigitaPlatform.ViewModels.dll
+F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform.ViewModels\bin\Debug\net6.0-windows\DigitaPlatform.ViewModels.pdb
+F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform.ViewModels\bin\Debug\net6.0-windows\DigitaPlatform.Models.dll
+F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform.ViewModels\bin\Debug\net6.0-windows\DigitaPlatform.Models.pdb
+F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform.ViewModels\obj\Debug\net6.0-windows\DigitaPlatform.ViewModels.csproj.AssemblyReference.cache
+F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform.ViewModels\obj\Debug\net6.0-windows\DigitaPlatform.ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform.ViewModels\obj\Debug\net6.0-windows\DigitaPlatform.ViewModels.AssemblyInfoInputs.cache
+F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform.ViewModels\obj\Debug\net6.0-windows\DigitaPlatform.ViewModels.AssemblyInfo.cs
+F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform.ViewModels\obj\Debug\net6.0-windows\DigitaPlatform.ViewModels.csproj.CoreCompileInputs.cache
+F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform.ViewModels\obj\Debug\net6.0-windows\DigitaPlatform.ViewModels.csproj.CopyComplete
+F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform.ViewModels\obj\Debug\net6.0-windows\DigitaPlatform.ViewModels.dll
+F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform.ViewModels\obj\Debug\net6.0-windows\refint\DigitaPlatform.ViewModels.dll
+F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform.ViewModels\obj\Debug\net6.0-windows\DigitaPlatform.ViewModels.pdb
+F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform.ViewModels\obj\Debug\net6.0-windows\ref\DigitaPlatform.ViewModels.dll

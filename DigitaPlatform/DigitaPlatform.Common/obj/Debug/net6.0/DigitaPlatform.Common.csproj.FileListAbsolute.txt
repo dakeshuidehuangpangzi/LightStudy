@@ -1,0 +1,12 @@
+F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform.Common\bin\Debug\net6.0\DigitaPlatform.Common.deps.json
+F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform.Common\bin\Debug\net6.0\DigitaPlatform.Common.dll
+F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform.Common\bin\Debug\net6.0\DigitaPlatform.Common.pdb
+F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform.Common\obj\Debug\net6.0\DigitaPlatform.Common.csproj.AssemblyReference.cache
+F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform.Common\obj\Debug\net6.0\DigitaPlatform.Common.GeneratedMSBuildEditorConfig.editorconfig
+F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform.Common\obj\Debug\net6.0\DigitaPlatform.Common.AssemblyInfoInputs.cache
+F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform.Common\obj\Debug\net6.0\DigitaPlatform.Common.AssemblyInfo.cs
+F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform.Common\obj\Debug\net6.0\DigitaPlatform.Common.csproj.CoreCompileInputs.cache
+F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform.Common\obj\Debug\net6.0\DigitaPlatform.Common.dll
+F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform.Common\obj\Debug\net6.0\refint\DigitaPlatform.Common.dll
+F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform.Common\obj\Debug\net6.0\DigitaPlatform.Common.pdb
+F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform.Common\obj\Debug\net6.0\ref\DigitaPlatform.Common.dll
