@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Pages\" />
+    <Folder Include="Dialog\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MvvmLightLibs" Version="5.4.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DigitaPlatform.Assets\DigitaPlatform.Assets.csproj" />
+    <ProjectReference Include="..\DigitaPlatform.ViewModels\DigitaPlatform.ViewModels.csproj" />
+  </ItemGroup>
+
+</Project>
