@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using DigitaPlatform.Models;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
@@ -8,6 +9,14 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+=======
+﻿using GalaSoft.MvvmLight;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+>>>>>>> 450c60ecf1b3b642a606b52abdc64d7e48e6f802
 
 namespace DigitaPlatform.ViewModels
 {
@@ -38,6 +47,7 @@ namespace DigitaPlatform.ViewModels
             get { return _isWindowClose; }
             set { Set(ref _isWindowClose, value); }
         }
+<<<<<<< HEAD
 
         //菜单集合
         public List<MenuModel> Menus { get; set; }
@@ -130,5 +140,11 @@ namespace DigitaPlatform.ViewModels
             }
         }
 
+=======
+        public MainViewModel()
+        {
+                
+        }
+>>>>>>> 450c60ecf1b3b642a606b52abdc64d7e48e6f802
     }
 }

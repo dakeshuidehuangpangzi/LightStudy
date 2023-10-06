@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "AV/q9rzZaxkaN9mCevbeOvRpfuyu77NPctrX9y7ktr5XJs3losTVElUirA70vK0R6yGZW/bL19zal8qCWnxWeA==",
+=======
+  "dgSpecHash": "ZTeixjIrxbbfsRo5k5pnQN7qzG8qKahLEG3lq/oC/J1XSrxv/YwXe+oIhgUD3YebZUg05/HqBDr8jNet6fvatQ==",
+>>>>>>> 450c60ecf1b3b642a606b52abdc64d7e48e6f802
   "success": true,
   "projectFilePath": "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.ViewModels\\DigitaPlatform.ViewModels.csproj",
   "expectedPackageFiles": [
@@ -122,10 +126,17 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
+<<<<<<< HEAD
       "message": "已使用“.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1”而不是项目目标框架“net6.0-windows7.0”还原包“MvvmLightLibs 5.4.1.1”。此包可能与项目不完全兼容。",
       "libraryId": "MvvmLightLibs",
       "targetGraphs": [
         "net6.0-windows7.0"
+=======
+      "message": "已使用“.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1”而不是项目目标框架“net6.0”还原包“MvvmLightLibs 5.4.1.1”。此包可能与项目不完全兼容。",
+      "libraryId": "MvvmLightLibs",
+      "targetGraphs": [
+        "net6.0"
+>>>>>>> 450c60ecf1b3b642a606b52abdc64d7e48e6f802
       ]
     }
   ]

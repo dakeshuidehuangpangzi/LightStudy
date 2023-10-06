@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "plZuXWjSFQGdqH8EJz5qIPVCcvQIlTVmEbZVGB6v9yNU76qBRF1ASsGa/E4s3+g1NaXoeooZa+uKN2CHF44NFQ==",
+=======
+  "dgSpecHash": "vFTMhTsA2ENSZR63sBhPJRebs16MdUVC+PbNR+kxZMy0g1Nbz0FDDwC+yNmeM3owq/4Ngid+Spt9xII6YART2A==",
+>>>>>>> 450c60ecf1b3b642a606b52abdc64d7e48e6f802
   "success": true,
   "projectFilePath": "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform\\DigitaPlatform.csproj",
   "expectedPackageFiles": [

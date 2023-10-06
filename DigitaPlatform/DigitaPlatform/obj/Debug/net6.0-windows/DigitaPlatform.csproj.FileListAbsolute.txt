@@ -41,5 +41,8 @@ F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform\obj\Debug\net6.0-windo
 F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform\obj\Debug\net6.0-windows\ref\DigitaPlatform.dll
 F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform\bin\Debug\net6.0-windows\DigitaPlatform.Assets.dll
 F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform\bin\Debug\net6.0-windows\DigitaPlatform.Assets.pdb
+<<<<<<< HEAD
 F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform\bin\Debug\net6.0-windows\DigitaPlatform.Models.dll
 F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform\bin\Debug\net6.0-windows\DigitaPlatform.Models.pdb
+=======
+>>>>>>> 450c60ecf1b3b642a606b52abdc64d7e48e6f802

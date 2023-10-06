@@ -1,7 +1,11 @@
 {
   "version": 3,
   "targets": {
+<<<<<<< HEAD
     "net6.0-windows7.0": {
+=======
+    "net6.0": {
+>>>>>>> 450c60ecf1b3b642a606b52abdc64d7e48e6f802
       "CommonServiceLocator/2.0.2": {
         "type": "package",
         "dependencies": {
@@ -2339,6 +2343,7 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+<<<<<<< HEAD
       },
       "DigitaPlatform.Models/1.0.0": {
         "type": "project",
@@ -2355,6 +2360,8 @@
         "frameworkReferences": [
           "Microsoft.WindowsDesktop.App.WPF"
         ]
+=======
+>>>>>>> 450c60ecf1b3b642a606b52abdc64d7e48e6f802
       }
     }
   },
@@ -7304,6 +7311,7 @@
         "system.xml.xpath.xdocument.4.0.1.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+<<<<<<< HEAD
     },
     "DigitaPlatform.Models/1.0.0": {
       "type": "project",
@@ -7314,6 +7322,12 @@
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
       "DigitaPlatform.Models >= 1.0.0",
+=======
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+>>>>>>> 450c60ecf1b3b642a606b52abdc64d7e48e6f802
       "MvvmLightLibs >= 5.4.1.1"
     ]
   },
@@ -7339,7 +7353,11 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
+<<<<<<< HEAD
         "net6.0-windows"
+=======
+        "net6.0"
+>>>>>>> 450c60ecf1b3b642a606b52abdc64d7e48e6f802
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -7348,6 +7366,7 @@
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
+<<<<<<< HEAD
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
@@ -7355,6 +7374,11 @@
               "projectPath": "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.Models\\DigitaPlatform.Models.csproj"
             }
           }
+=======
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {}
+>>>>>>> 450c60ecf1b3b642a606b52abdc64d7e48e6f802
         }
       },
       "warningProperties": {
@@ -7364,8 +7388,13 @@
       }
     },
     "frameworks": {
+<<<<<<< HEAD
       "net6.0-windows7.0": {
         "targetAlias": "net6.0-windows",
+=======
+      "net6.0": {
+        "targetAlias": "net6.0",
+>>>>>>> 450c60ecf1b3b642a606b52abdc64d7e48e6f802
         "dependencies": {
           "MvvmLightLibs": {
             "target": "Package",
@@ -7397,10 +7426,17 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
+<<<<<<< HEAD
       "message": "已使用“.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1”而不是项目目标框架“net6.0-windows7.0”还原包“MvvmLightLibs 5.4.1.1”。此包可能与项目不完全兼容。",
       "libraryId": "MvvmLightLibs",
       "targetGraphs": [
         "net6.0-windows7.0"
+=======
+      "message": "已使用“.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1”而不是项目目标框架“net6.0”还原包“MvvmLightLibs 5.4.1.1”。此包可能与项目不完全兼容。",
+      "libraryId": "MvvmLightLibs",
+      "targetGraphs": [
+        "net6.0"
+>>>>>>> 450c60ecf1b3b642a606b52abdc64d7e48e6f802
       ]
     }
   ]

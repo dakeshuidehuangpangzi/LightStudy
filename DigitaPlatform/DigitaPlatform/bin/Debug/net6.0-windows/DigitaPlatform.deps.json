@@ -1385,6 +1385,7 @@
           "DigitaPlatform.Assets.dll": {}
         }
       },
+<<<<<<< HEAD
       "DigitaPlatform.Models/1.0.0": {
         "dependencies": {
           "MvvmLightLibs": "5.4.1.1"
@@ -1396,6 +1397,10 @@
       "DigitaPlatform.ViewModels/1.0.0": {
         "dependencies": {
           "DigitaPlatform.Models": "1.0.0",
+=======
+      "DigitaPlatform.ViewModels/1.0.0": {
+        "dependencies": {
+>>>>>>> 450c60ecf1b3b642a606b52abdc64d7e48e6f802
           "MvvmLightLibs": "5.4.1.1"
         },
         "runtime": {
@@ -2209,11 +2214,14 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "DigitaPlatform.Models/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
+=======
+>>>>>>> 450c60ecf1b3b642a606b52abdc64d7e48e6f802
     "DigitaPlatform.ViewModels/1.0.0": {
       "type": "project",
       "serviceable": false,

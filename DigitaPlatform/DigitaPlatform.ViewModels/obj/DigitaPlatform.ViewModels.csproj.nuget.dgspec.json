@@ -4,6 +4,7 @@
     "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.ViewModels\\DigitaPlatform.ViewModels.csproj": {}
   },
   "projects": {
+<<<<<<< HEAD
     "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.Models\\DigitaPlatform.Models.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -74,6 +75,8 @@
         }
       }
     },
+=======
+>>>>>>> 450c60ecf1b3b642a606b52abdc64d7e48e6f802
     "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.ViewModels\\DigitaPlatform.ViewModels.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -92,7 +95,11 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
+<<<<<<< HEAD
           "net6.0-windows"
+=======
+          "net6.0"
+>>>>>>> 450c60ecf1b3b642a606b52abdc64d7e48e6f802
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -101,6 +108,7 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
+<<<<<<< HEAD
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
@@ -108,6 +116,11 @@
                 "projectPath": "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.Models\\DigitaPlatform.Models.csproj"
               }
             }
+=======
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+>>>>>>> 450c60ecf1b3b642a606b52abdc64d7e48e6f802
           }
         },
         "warningProperties": {
@@ -117,8 +130,13 @@
         }
       },
       "frameworks": {
+<<<<<<< HEAD
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+=======
+        "net6.0": {
+          "targetAlias": "net6.0",
+>>>>>>> 450c60ecf1b3b642a606b52abdc64d7e48e6f802
           "dependencies": {
             "MvvmLightLibs": {
               "target": "Package",

@@ -20,7 +20,10 @@ F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform.Views\obj\Debug\net6.0
 F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform.Views\obj\Debug\net6.0-windows\ref\DigitaPlatform.Views.dll
 F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform.Views\bin\Debug\net6.0-windows\DigitaPlatform.Assets.dll
 F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform.Views\bin\Debug\net6.0-windows\DigitaPlatform.Assets.pdb
+<<<<<<< HEAD
 F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform.Views\obj\Debug\net6.0-windows\Pages\MonitorPage.g.cs
 F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform.Views\obj\Debug\net6.0-windows\Pages\MonitorPage.baml
 F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform.Views\bin\Debug\net6.0-windows\DigitaPlatform.Models.dll
 F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform.Views\bin\Debug\net6.0-windows\DigitaPlatform.Models.pdb
+=======
+>>>>>>> 450c60ecf1b3b642a606b52abdc64d7e48e6f802

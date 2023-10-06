@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+<<<<<<< HEAD
+=======
+    <Folder Include="Pages\" />
+>>>>>>> 450c60ecf1b3b642a606b52abdc64d7e48e6f802
     <Folder Include="Dialog\" />
   </ItemGroup>
 

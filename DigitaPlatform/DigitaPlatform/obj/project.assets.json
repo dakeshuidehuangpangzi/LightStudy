@@ -2353,6 +2353,7 @@
           "Microsoft.WindowsDesktop.App.WPF"
         ]
       },
+<<<<<<< HEAD
       "DigitaPlatform.Models/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -2369,11 +2370,16 @@
           "Microsoft.WindowsDesktop.App.WPF"
         ]
       },
+=======
+>>>>>>> 450c60ecf1b3b642a606b52abdc64d7e48e6f802
       "DigitaPlatform.ViewModels/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+<<<<<<< HEAD
           "DigitaPlatform.Models": "1.0.0",
+=======
+>>>>>>> 450c60ecf1b3b642a606b52abdc64d7e48e6f802
           "MvvmLightLibs": "5.4.1.1"
         },
         "compile": {
@@ -7355,11 +7361,14 @@
       "path": "../DigitaPlatform.Assets/DigitaPlatform.Assets.csproj",
       "msbuildProject": "../DigitaPlatform.Assets/DigitaPlatform.Assets.csproj"
     },
+<<<<<<< HEAD
     "DigitaPlatform.Models/1.0.0": {
       "type": "project",
       "path": "../DigitaPlatform.Models/DigitaPlatform.Models.csproj",
       "msbuildProject": "../DigitaPlatform.Models/DigitaPlatform.Models.csproj"
     },
+=======
+>>>>>>> 450c60ecf1b3b642a606b52abdc64d7e48e6f802
     "DigitaPlatform.ViewModels/1.0.0": {
       "type": "project",
       "path": "../DigitaPlatform.ViewModels/DigitaPlatform.ViewModels.csproj",
