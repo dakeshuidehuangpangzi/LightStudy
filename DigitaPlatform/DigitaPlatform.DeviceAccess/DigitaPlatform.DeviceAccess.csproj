@@ -17,7 +17,6 @@
 
   <ItemGroup>
     <Folder Include="Execute\Modbus\" />
-    <Folder Include="Execute\S7\" />
     <Folder Include="Execute\OMRON\" />
     <Folder Include="Execute\MITSUBISHI\" />
     <Folder Include="Execute\MQTT\" />
