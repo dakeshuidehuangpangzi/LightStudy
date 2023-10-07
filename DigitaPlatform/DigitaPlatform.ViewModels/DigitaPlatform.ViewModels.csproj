@@ -1,11 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-<<<<<<< HEAD
-    <TargetFramework>net6.0-windows</TargetFramework>
-=======
     <TargetFramework>net6.0</TargetFramework>
->>>>>>> 450c60ecf1b3b642a606b52abdc64d7e48e6f802
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
@@ -14,11 +10,8 @@
     <PackageReference Include="MvvmLightLibs" Version="5.4.1.1" />
   </ItemGroup>
 
-<<<<<<< HEAD
   <ItemGroup>
     <ProjectReference Include="..\DigitaPlatform.Models\DigitaPlatform.Models.csproj" />
   </ItemGroup>
 
-=======
->>>>>>> 450c60ecf1b3b642a606b52abdc64d7e48e6f802
 </Project>

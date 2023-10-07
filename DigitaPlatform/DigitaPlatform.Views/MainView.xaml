@@ -18,7 +18,6 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="pack://application:,,,/DigitaPlatform.Assets;component/Styles/ButtonStyles.xaml"/>
 
-<<<<<<< HEAD
                 <ResourceDictionary>
                     <Style TargetType="RadioButton"  x:Key="MenuButtonStyle" >
                         <Setter Property="Margin" Value="5,8"/>
@@ -54,8 +53,6 @@
                         </Setter>
                     </Style>
                 </ResourceDictionary>
-=======
->>>>>>> 450c60ecf1b3b642a606b52abdc64d7e48e6f802
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Window.Resources>
@@ -80,7 +77,6 @@
             <Button Content="&#xe653;" Style="{StaticResource WindowControlButtonStyle}"   FontFamily="{StaticResource Iconfont}"
                     Height="30" Width="50" Foreground="#555" Click="Button_Click"/>
         </StackPanel>
-<<<<<<< HEAD
 
         <Grid Grid.Row="1">
             <Border BorderThickness="0,0,1,0">
@@ -112,7 +108,5 @@
                 </ItemsControl>
             </Border>
         </Grid>
-=======
->>>>>>> 450c60ecf1b3b642a606b52abdc64d7e48e6f802
     </Grid>
 </Window>

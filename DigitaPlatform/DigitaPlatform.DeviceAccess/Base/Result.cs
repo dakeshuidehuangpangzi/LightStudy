@@ -23,7 +23,9 @@ namespace DigitaPlatform.DeviceAccess.Base
         public T Data { get; set; }
 
         public Result() : this(true, "OK") { }
+
         public Result(bool state, string msg) : this(state, msg, default(T)) { }
+
         public Result(bool state, string msg, T data)
         {
             this.Status = state; Message = msg; Data = data;

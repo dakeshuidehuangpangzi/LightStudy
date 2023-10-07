@@ -1,4 +1,4 @@
-﻿using DigitaPlatform.Common.Enum;
+﻿using DigitaPlatform.Common;
 using DigitaPlatform.DeviceAccess.Base;
 using DigitaPlatform.DeviceAccess.Transfer;
 using DigitaPlatform.Entities;
@@ -12,12 +12,15 @@ namespace DigitaPlatform.DeviceAccess.Execute
 {
     public abstract class ExecuteObject
     {
-
         /// <summary>字节排序</summary>
         public EndianType EndianType { get; set; } = EndianType.ABCD;
         /// <summary>通讯方式</summary>
+
         internal TransferObject TransferObject {  get; set; }
+
+
         internal List<DevicePropItemEntity> Props { get; set; }
+
         /// <summary>
         /// 匹配创建通讯方式
         /// </summary>
@@ -48,10 +51,13 @@ namespace DigitaPlatform.DeviceAccess.Execute
                 if (this.TransferObject == null)
                 {
                     //使用反射找到要创建的对象
+
                     Type type = this.GetType().Assembly.GetType("DigitaPlatform.DeviceAccess.Transfer." + protocol);
+
                     this.TransferObject = (TransferObject)Activator.CreateInstance(type);//创建对象
 
                     this.TransferObject.Conditions = conditions;//创建的局部对象赋予当前对象
+
                     tos.Add(this.TransferObject);//添加到参数内的集合
 
                     // 初始化相关属性   
@@ -59,6 +65,7 @@ namespace DigitaPlatform.DeviceAccess.Execute
                     if (!result_config.Status)//参数填写失败
                         return result_config;//返回填写失败信息回去
                 }
+
             }
             catch (Exception ex)
             {

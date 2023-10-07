@@ -8,19 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-<<<<<<< HEAD
-=======
-    <Folder Include="Pages\" />
->>>>>>> 450c60ecf1b3b642a606b52abdc64d7e48e6f802
-    <Folder Include="Dialog\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="MvvmLightLibs" Version="5.4.1.1" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\DigitaPlatform.Assets\DigitaPlatform.Assets.csproj" />
+    <ProjectReference Include="..\DigitaPlatform.Common\DigitaPlatform.Common.csproj" />
     <ProjectReference Include="..\DigitaPlatform.ViewModels\DigitaPlatform.ViewModels.csproj" />
   </ItemGroup>
 

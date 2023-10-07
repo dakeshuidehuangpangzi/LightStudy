@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5gp9ftv5x/UnIzkdFB8BoIHO6ElNjkJReQMtlIMeUerMpDLOLgmHGHF4OGcQFCTJULq87CT13HtMP48u2lghWA==",
+  "dgSpecHash": "w7Nz2LyEZ7k2pqnYzDamYj0xuA5RfUpgPQ/r+dgti50kdMeEsWufr6oK1xZuD6RI3z/zLZJhF/ilMtmk3b2K1g==",
   "success": true,
-  "projectFilePath": "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.IDataAccess\\DigitaPlatform.IDataAccess.csproj",
+  "projectFilePath": "F:\\GitWorkerCode\\DigitaPlatform\\DigitaPlatform.IDataAccess\\DigitaPlatform.IDataAccess.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -2353,7 +2353,16 @@
           "Microsoft.WindowsDesktop.App.WPF"
         ]
       },
-<<<<<<< HEAD
+      "DigitaPlatform.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/DigitaPlatform.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DigitaPlatform.Common.dll": {}
+        }
+      },
       "DigitaPlatform.Models/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -2365,21 +2374,13 @@
         },
         "runtime": {
           "bin/placeholder/DigitaPlatform.Models.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.WindowsDesktop.App.WPF"
-        ]
+        }
       },
-=======
->>>>>>> 450c60ecf1b3b642a606b52abdc64d7e48e6f802
       "DigitaPlatform.ViewModels/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-<<<<<<< HEAD
           "DigitaPlatform.Models": "1.0.0",
-=======
->>>>>>> 450c60ecf1b3b642a606b52abdc64d7e48e6f802
           "MvvmLightLibs": "5.4.1.1"
         },
         "compile": {
@@ -7343,14 +7344,16 @@
       "path": "../DigitaPlatform.Assets/DigitaPlatform.Assets.csproj",
       "msbuildProject": "../DigitaPlatform.Assets/DigitaPlatform.Assets.csproj"
     },
-<<<<<<< HEAD
+    "DigitaPlatform.Common/1.0.0": {
+      "type": "project",
+      "path": "../DigitaPlatform.Common/DigitaPlatform.Common.csproj",
+      "msbuildProject": "../DigitaPlatform.Common/DigitaPlatform.Common.csproj"
+    },
     "DigitaPlatform.Models/1.0.0": {
       "type": "project",
       "path": "../DigitaPlatform.Models/DigitaPlatform.Models.csproj",
       "msbuildProject": "../DigitaPlatform.Models/DigitaPlatform.Models.csproj"
     },
-=======
->>>>>>> 450c60ecf1b3b642a606b52abdc64d7e48e6f802
     "DigitaPlatform.ViewModels/1.0.0": {
       "type": "project",
       "path": "../DigitaPlatform.ViewModels/DigitaPlatform.ViewModels.csproj",
@@ -7360,8 +7363,8 @@
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
       "DigitaPlatform.Assets >= 1.0.0",
-      "DigitaPlatform.ViewModels >= 1.0.0",
-      "MvvmLightLibs >= 5.4.1.1"
+      "DigitaPlatform.Common >= 1.0.0",
+      "DigitaPlatform.ViewModels >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -7371,11 +7374,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.Views\\DigitaPlatform.Views.csproj",
+      "projectUniqueName": "F:\\GitWorkerCode\\DigitaPlatform\\DigitaPlatform.Views\\DigitaPlatform.Views.csproj",
       "projectName": "DigitaPlatform.Views",
-      "projectPath": "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.Views\\DigitaPlatform.Views.csproj",
+      "projectPath": "F:\\GitWorkerCode\\DigitaPlatform\\DigitaPlatform.Views\\DigitaPlatform.Views.csproj",
       "packagesPath": "C:\\Users\\黄胖子\\.nuget\\packages\\",
-      "outputPath": "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.Views\\obj\\",
+      "outputPath": "F:\\GitWorkerCode\\DigitaPlatform\\DigitaPlatform.Views\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -7398,11 +7401,14 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.Assets\\DigitaPlatform.Assets.csproj": {
-              "projectPath": "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.Assets\\DigitaPlatform.Assets.csproj"
+            "F:\\GitWorkerCode\\DigitaPlatform\\DigitaPlatform.Assets\\DigitaPlatform.Assets.csproj": {
+              "projectPath": "F:\\GitWorkerCode\\DigitaPlatform\\DigitaPlatform.Assets\\DigitaPlatform.Assets.csproj"
             },
-            "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.ViewModels\\DigitaPlatform.ViewModels.csproj": {
-              "projectPath": "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.ViewModels\\DigitaPlatform.ViewModels.csproj"
+            "F:\\GitWorkerCode\\DigitaPlatform\\DigitaPlatform.Common\\DigitaPlatform.Common.csproj": {
+              "projectPath": "F:\\GitWorkerCode\\DigitaPlatform\\DigitaPlatform.Common\\DigitaPlatform.Common.csproj"
+            },
+            "F:\\GitWorkerCode\\DigitaPlatform\\DigitaPlatform.ViewModels\\DigitaPlatform.ViewModels.csproj": {
+              "projectPath": "F:\\GitWorkerCode\\DigitaPlatform\\DigitaPlatform.ViewModels\\DigitaPlatform.ViewModels.csproj"
             }
           }
         }
@@ -7416,12 +7422,6 @@
     "frameworks": {
       "net6.0-windows7.0": {
         "targetAlias": "net6.0-windows",
-        "dependencies": {
-          "MvvmLightLibs": {
-            "target": "Package",
-            "version": "[5.4.1.1, )"
-          }
-        },
         "imports": [
           "net461",
           "net462",

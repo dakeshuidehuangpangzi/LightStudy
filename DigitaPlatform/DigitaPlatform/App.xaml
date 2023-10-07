@@ -1,7 +1,7 @@
 ﻿<Application x:Class="DigitaPlatform.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:v="clr-namespace:DigitaPlatform.ViewModels;assembly=DigitaPlatform.ViewModels"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:v="clr-namespace:DigitaPlatform.ViewModels;assembly=DigitaPlatform.ViewModels"            
              xmlns:local="clr-namespace:DigitaPlatform"
              StartupUri="pack://application:,,,/DigitaPlatform.Views;component/MainView.xaml">
     <Application.Resources>

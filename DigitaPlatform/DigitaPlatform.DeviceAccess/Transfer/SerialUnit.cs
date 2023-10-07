@@ -51,8 +51,12 @@ namespace DigitaPlatform.DeviceAccess.Transfer
                  */
                 foreach (var item in props)
                 {
+
                     object v = null;//用作转换完成后存放的临时变量
+
+
                     PropertyInfo pi = serialPort.GetType().GetProperty(item.PropName.Trim(), BindingFlags.Public | BindingFlags.Instance);
+
                     if (pi == null) continue;
 
                     Type propType = pi.PropertyType;

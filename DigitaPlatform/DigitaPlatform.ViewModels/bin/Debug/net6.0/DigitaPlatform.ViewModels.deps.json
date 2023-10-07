@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "DigitaPlatform.ViewModels/1.0.0": {
         "dependencies": {
+          "DigitaPlatform.Models": "1.0.0",
           "MvvmLightLibs": "5.4.1.1"
         },
         "runtime": {
@@ -1383,6 +1384,14 @@
           "System.Xml.XDocument": "4.0.11",
           "System.Xml.XPath": "4.0.1"
         }
+      },
+      "DigitaPlatform.Models/1.0.0": {
+        "dependencies": {
+          "MvvmLightLibs": "5.4.1.1"
+        },
+        "runtime": {
+          "DigitaPlatform.Models.dll": {}
+        }
       }
     }
   },
@@ -2175,6 +2184,11 @@
       "sha512": "sha512-FLhdYJx4331oGovQypQ8JIw2kEmNzCsjVOVYY/16kZTUoquZG85oVn7yUhBE2OZt1yGPSXAL0HTEfzjlbNpM7Q==",
       "path": "system.xml.xpath.xdocument/4.0.1",
       "hashPath": "system.xml.xpath.xdocument.4.0.1.nupkg.sha512"
+    },
+    "DigitaPlatform.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

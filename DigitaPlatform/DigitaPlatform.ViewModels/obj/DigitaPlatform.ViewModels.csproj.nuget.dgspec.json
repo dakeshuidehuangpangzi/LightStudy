@@ -1,18 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.ViewModels\\DigitaPlatform.ViewModels.csproj": {}
+    "F:\\GitWorkerCode\\DigitaPlatform\\DigitaPlatform.ViewModels\\DigitaPlatform.ViewModels.csproj": {}
   },
   "projects": {
-<<<<<<< HEAD
-    "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.Models\\DigitaPlatform.Models.csproj": {
+    "F:\\GitWorkerCode\\DigitaPlatform\\DigitaPlatform.Models\\DigitaPlatform.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.Models\\DigitaPlatform.Models.csproj",
+        "projectUniqueName": "F:\\GitWorkerCode\\DigitaPlatform\\DigitaPlatform.Models\\DigitaPlatform.Models.csproj",
         "projectName": "DigitaPlatform.Models",
-        "projectPath": "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.Models\\DigitaPlatform.Models.csproj",
+        "projectPath": "F:\\GitWorkerCode\\DigitaPlatform\\DigitaPlatform.Models\\DigitaPlatform.Models.csproj",
         "packagesPath": "C:\\Users\\黄胖子\\.nuget\\packages\\",
-        "outputPath": "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.Models\\obj\\",
+        "outputPath": "F:\\GitWorkerCode\\DigitaPlatform\\DigitaPlatform.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -23,7 +22,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0-windows"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -32,8 +31,8 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0-windows7.0": {
-            "targetAlias": "net6.0-windows",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -44,8 +43,8 @@
         }
       },
       "frameworks": {
-        "net6.0-windows7.0": {
-          "targetAlias": "net6.0-windows",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "MvvmLightLibs": {
               "target": "Package",
@@ -66,25 +65,20 @@
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
-            },
-            "Microsoft.WindowsDesktop.App.WPF": {
-              "privateAssets": "none"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-=======
->>>>>>> 450c60ecf1b3b642a606b52abdc64d7e48e6f802
-    "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.ViewModels\\DigitaPlatform.ViewModels.csproj": {
+    "F:\\GitWorkerCode\\DigitaPlatform\\DigitaPlatform.ViewModels\\DigitaPlatform.ViewModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.ViewModels\\DigitaPlatform.ViewModels.csproj",
+        "projectUniqueName": "F:\\GitWorkerCode\\DigitaPlatform\\DigitaPlatform.ViewModels\\DigitaPlatform.ViewModels.csproj",
         "projectName": "DigitaPlatform.ViewModels",
-        "projectPath": "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.ViewModels\\DigitaPlatform.ViewModels.csproj",
+        "projectPath": "F:\\GitWorkerCode\\DigitaPlatform\\DigitaPlatform.ViewModels\\DigitaPlatform.ViewModels.csproj",
         "packagesPath": "C:\\Users\\黄胖子\\.nuget\\packages\\",
-        "outputPath": "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.ViewModels\\obj\\",
+        "outputPath": "F:\\GitWorkerCode\\DigitaPlatform\\DigitaPlatform.ViewModels\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -95,11 +89,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-<<<<<<< HEAD
-          "net6.0-windows"
-=======
           "net6.0"
->>>>>>> 450c60ecf1b3b642a606b52abdc64d7e48e6f802
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -108,19 +98,13 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-<<<<<<< HEAD
-          "net6.0-windows7.0": {
-            "targetAlias": "net6.0-windows",
-            "projectReferences": {
-              "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.Models\\DigitaPlatform.Models.csproj": {
-                "projectPath": "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.Models\\DigitaPlatform.Models.csproj"
-              }
-            }
-=======
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
->>>>>>> 450c60ecf1b3b642a606b52abdc64d7e48e6f802
+            "projectReferences": {
+              "F:\\GitWorkerCode\\DigitaPlatform\\DigitaPlatform.Models\\DigitaPlatform.Models.csproj": {
+                "projectPath": "F:\\GitWorkerCode\\DigitaPlatform\\DigitaPlatform.Models\\DigitaPlatform.Models.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -130,13 +114,8 @@
         }
       },
       "frameworks": {
-<<<<<<< HEAD
-        "net6.0-windows7.0": {
-          "targetAlias": "net6.0-windows",
-=======
         "net6.0": {
           "targetAlias": "net6.0",
->>>>>>> 450c60ecf1b3b642a606b52abdc64d7e48e6f802
           "dependencies": {
             "MvvmLightLibs": {
               "target": "Package",

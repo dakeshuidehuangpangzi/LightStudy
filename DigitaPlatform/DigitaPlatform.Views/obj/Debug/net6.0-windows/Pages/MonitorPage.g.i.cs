@@ -9,7 +9,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-using DigitaPlatform.Views;
 using DigitaPlatform.Views.Pages;
 using System;
 using System.Diagnostics;
@@ -54,7 +53,7 @@ namespace DigitaPlatform.Views.Pages {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/DigitaPlatform.Views;V1.0.0.0;component/pages/monitorpage.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/DigitaPlatform.Views;component/pages/monitorpage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Pages\MonitorPage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

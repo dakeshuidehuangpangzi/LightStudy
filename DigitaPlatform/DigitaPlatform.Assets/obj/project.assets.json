@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.Assets\\DigitaPlatform.Assets.csproj",
+      "projectUniqueName": "F:\\GitWorkerCode\\DigitaPlatform\\DigitaPlatform.Assets\\DigitaPlatform.Assets.csproj",
       "projectName": "DigitaPlatform.Assets",
-      "projectPath": "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.Assets\\DigitaPlatform.Assets.csproj",
+      "projectPath": "F:\\GitWorkerCode\\DigitaPlatform\\DigitaPlatform.Assets\\DigitaPlatform.Assets.csproj",
       "packagesPath": "C:\\Users\\黄胖子\\.nuget\\packages\\",
-      "outputPath": "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.Assets\\obj\\",
+      "outputPath": "F:\\GitWorkerCode\\DigitaPlatform\\DigitaPlatform.Assets\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
