@@ -34,18 +34,12 @@ namespace DigitaPlatform.DeviceAccess.Transfer
             this.ConnectState = false;
             return new Result();
         }
-#pragma warning disable CS8603 // 可能返回 null 引用。
-        internal virtual Result<List<byte>> SendAndReceived(List<byte> req, int len1, int len2, int timeout) => null;
-#pragma warning restore CS8603 // 可能返回 null 引用。
 
+        internal virtual Result<List<byte>> SendAndReceived(List<byte> req, int len1, int len2, int timeout) => null;
         // 参数：calcLen
         // 委托，作用是
-#pragma warning disable CS8625 // 无法将 null 字面量转换为非 null 的引用类型。
         internal virtual Result<List<byte>> SendAndReceived(List<byte> req, int len1, int timeout, Func<byte[], int> calcLen = null)
-#pragma warning restore CS8625 // 无法将 null 字面量转换为非 null 的引用类型。
             => new Result<List<byte>>(false, "NULL");
-
-
 
     }
 }

@@ -15,4 +15,10 @@
     <ProjectReference Include="..\DigitaPlatform.Entities\DigitaPlatform.Entities.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Execute\Modbus\" />
+    <Folder Include="Execute\Mqtt\" />
+    <Folder Include="Execute\S7\" />
+  </ItemGroup>
+
 </Project>

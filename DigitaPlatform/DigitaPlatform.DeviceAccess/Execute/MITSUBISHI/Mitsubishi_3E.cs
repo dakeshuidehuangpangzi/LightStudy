@@ -8,6 +8,9 @@ namespace DigitaPlatform.DeviceAccess.Execute.MITSUBISHI
 {
     internal class Mitsubishi_3E: MitsubishiBase
     {
+        /// <summary>
+        /// 错误字典
+        /// </summary>
         Dictionary<int, string> ErrCode = new Dictionary<int, string>()
         {
             {0x55,"将运行中写入设置为不允许时，通过对象设备向 CPU 模块发出了运行中数据写入请求" },
@@ -31,7 +34,6 @@ namespace DigitaPlatform.DeviceAccess.Execute.MITSUBISHI
             {0XC200,"远程口令有错误" },
             {0XC201,"通信所使用的端口处于远程口令的锁定状态/或者 “通信数据代码设置”为 ASCII 代码时，由于处于远程口令的锁定状态，因此无法将子指令以后转换为二进制代码" },
             {0XC204,"与发出了远程口令解锁处理请求的对象设备不相同" },
-
         };
     }
 }

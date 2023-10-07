@@ -20,7 +20,7 @@ namespace DigitaPlatform.DeviceAccess.Base
         /// <summary>
         /// 数据访问区
         /// </summary>
-        public SiemensAreaEnums AreaType { get; set; }
+        public SiemensAreaTypes AreaType { get; set; }
         public int DBNumber { get; set; } = 0;
         /// <summary>
         /// 地址分为两部分（Byte   Bit）

@@ -26,9 +26,7 @@ namespace DigitaPlatform.DeviceAccess.Transfer
         {
             try
             {
-
                 ip = props.FirstOrDefault(x => x.PropName == "IP")?.PropValue;
-
                 int.TryParse(props.FirstOrDefault(x=>x.PropName == "Port")?.PropValue, out port);
                 return new Result();
             }
@@ -45,34 +43,25 @@ namespace DigitaPlatform.DeviceAccess.Transfer
             lock (socketLock)
             {
                 Result result = new Result();
-
                 try
                 {
                     if (socket == null)
                         // ProtocolType 可支持配置
                         socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-
                     int count = 0;
                     bool connectState = false;
                     TimeoutObject.Reset();
                     while (count < trycount)
                     {
-
                         if (!(!socket.Connected || (socket.Poll(200, SelectMode.SelectRead) && (socket.Available == 0))))
                         {
                             return result;
                         }
-
                         try
                         {
                             socket?.Close();
-
                             socket.Dispose();
-
-#pragma warning disable CS8625 // 无法将 null 字面量转换为非 null 的引用类型。
                             socket = null;
-#pragma warning restore CS8625 // 无法将 null 字面量转换为非 null 的引用类型。
-
                             socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
                             socket.BeginConnect(ip, port, callback =>
                             {
