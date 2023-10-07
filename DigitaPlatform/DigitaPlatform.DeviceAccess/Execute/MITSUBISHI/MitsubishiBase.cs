@@ -43,7 +43,11 @@ namespace DigitaPlatform.DeviceAccess.Execute.MITSUBISHI
         };
 
         #region 地址解析
-
+        /// <summary>
+        /// 算出地址的参数内容
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
         public Result<MitsublshiAddress> ConvetAddress_3E(string name)
         {
             string findAddress = name.ToUpper();
@@ -74,7 +78,7 @@ namespace DigitaPlatform.DeviceAccess.Execute.MITSUBISHI
             MitsublshiAddress address = new MitsublshiAddress()
             {
                 VariableName = findAddress,
-                AreaType = (MitsublshiAreaTypes)addType.GetValue(find),
+                AreaType = (MitsublshiAreaTypes)Enum.GetValues(typeof(MitsublshiAreaTypes)).GetValue(find),
                 DataType = binary[addType[find]].DataType,
                 Format = binary[addType[find]].Format,
                 AreaAddress = isdouble==true? Convert.ToInt32(findAddress.Substring(2), binary[addType[find]].Format) 
@@ -82,8 +86,6 @@ namespace DigitaPlatform.DeviceAccess.Execute.MITSUBISHI
             };
             return  new Result<MitsublshiAddress>() { Data= address };
         }
-
-
         #endregion
     }
 }
