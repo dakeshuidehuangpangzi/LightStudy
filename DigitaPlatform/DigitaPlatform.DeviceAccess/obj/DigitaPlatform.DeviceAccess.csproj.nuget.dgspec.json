@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\GitWorkerCode\\DigitaPlatform\\DigitaPlatform.DeviceAccess\\DigitaPlatform.DeviceAccess.csproj": {}
+    "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.DeviceAccess\\DigitaPlatform.DeviceAccess.csproj": {}
   },
   "projects": {
-    "F:\\GitWorkerCode\\DigitaPlatform\\DigitaPlatform.Common\\DigitaPlatform.Common.csproj": {
+    "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.Common\\DigitaPlatform.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\GitWorkerCode\\DigitaPlatform\\DigitaPlatform.Common\\DigitaPlatform.Common.csproj",
+        "projectUniqueName": "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.Common\\DigitaPlatform.Common.csproj",
         "projectName": "DigitaPlatform.Common",
-        "projectPath": "F:\\GitWorkerCode\\DigitaPlatform\\DigitaPlatform.Common\\DigitaPlatform.Common.csproj",
+        "projectPath": "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.Common\\DigitaPlatform.Common.csproj",
         "packagesPath": "C:\\Users\\黄胖子\\.nuget\\packages\\",
-        "outputPath": "F:\\GitWorkerCode\\DigitaPlatform\\DigitaPlatform.Common\\obj\\",
+        "outputPath": "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -65,14 +65,14 @@
         }
       }
     },
-    "F:\\GitWorkerCode\\DigitaPlatform\\DigitaPlatform.DeviceAccess\\DigitaPlatform.DeviceAccess.csproj": {
+    "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.DeviceAccess\\DigitaPlatform.DeviceAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\GitWorkerCode\\DigitaPlatform\\DigitaPlatform.DeviceAccess\\DigitaPlatform.DeviceAccess.csproj",
+        "projectUniqueName": "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.DeviceAccess\\DigitaPlatform.DeviceAccess.csproj",
         "projectName": "DigitaPlatform.DeviceAccess",
-        "projectPath": "F:\\GitWorkerCode\\DigitaPlatform\\DigitaPlatform.DeviceAccess\\DigitaPlatform.DeviceAccess.csproj",
+        "projectPath": "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.DeviceAccess\\DigitaPlatform.DeviceAccess.csproj",
         "packagesPath": "C:\\Users\\黄胖子\\.nuget\\packages\\",
-        "outputPath": "F:\\GitWorkerCode\\DigitaPlatform\\DigitaPlatform.DeviceAccess\\obj\\",
+        "outputPath": "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.DeviceAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -95,11 +95,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "F:\\GitWorkerCode\\DigitaPlatform\\DigitaPlatform.Common\\DigitaPlatform.Common.csproj": {
-                "projectPath": "F:\\GitWorkerCode\\DigitaPlatform\\DigitaPlatform.Common\\DigitaPlatform.Common.csproj"
+              "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.Common\\DigitaPlatform.Common.csproj": {
+                "projectPath": "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.Common\\DigitaPlatform.Common.csproj"
               },
-              "F:\\GitWorkerCode\\DigitaPlatform\\DigitaPlatform.Entities\\DigitaPlatform.Entities.csproj": {
-                "projectPath": "F:\\GitWorkerCode\\DigitaPlatform\\DigitaPlatform.Entities\\DigitaPlatform.Entities.csproj"
+              "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.Entities\\DigitaPlatform.Entities.csproj": {
+                "projectPath": "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.Entities\\DigitaPlatform.Entities.csproj"
               }
             }
           }
@@ -139,14 +139,14 @@
         }
       }
     },
-    "F:\\GitWorkerCode\\DigitaPlatform\\DigitaPlatform.Entities\\DigitaPlatform.Entities.csproj": {
+    "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.Entities\\DigitaPlatform.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\GitWorkerCode\\DigitaPlatform\\DigitaPlatform.Entities\\DigitaPlatform.Entities.csproj",
+        "projectUniqueName": "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.Entities\\DigitaPlatform.Entities.csproj",
         "projectName": "DigitaPlatform.Entities",
-        "projectPath": "F:\\GitWorkerCode\\DigitaPlatform\\DigitaPlatform.Entities\\DigitaPlatform.Entities.csproj",
+        "projectPath": "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.Entities\\DigitaPlatform.Entities.csproj",
         "packagesPath": "C:\\Users\\黄胖子\\.nuget\\packages\\",
-        "outputPath": "F:\\GitWorkerCode\\DigitaPlatform\\DigitaPlatform.Entities\\obj\\",
+        "outputPath": "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

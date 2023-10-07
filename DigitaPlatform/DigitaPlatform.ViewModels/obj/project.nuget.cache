@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "R9jPHS8PDVu7Fcvhgpcpg58BwsJO6R6aTRotbxkZVVYP2YiadV35m0l2eJ3zdMig7WugKKm+PfeIRMvu7OjQog==",
+  "dgSpecHash": "5h5UAdipI4EAU/zT9vIY99f4JqKvDJFNluOx0cmCPHyWSlGmS6OPCjooMXbDXceBCVcKqOApD4O4JOL3iwPYZA==",
   "success": true,
-  "projectFilePath": "F:\\GitWorkerCode\\DigitaPlatform\\DigitaPlatform.ViewModels\\DigitaPlatform.ViewModels.csproj",
+  "projectFilePath": "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.ViewModels\\DigitaPlatform.ViewModels.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\黄胖子\\.nuget\\packages\\commonservicelocator\\2.0.2\\commonservicelocator.2.0.2.nupkg.sha512",
     "C:\\Users\\黄胖子\\.nuget\\packages\\libuv\\1.9.1\\libuv.1.9.1.nupkg.sha512",

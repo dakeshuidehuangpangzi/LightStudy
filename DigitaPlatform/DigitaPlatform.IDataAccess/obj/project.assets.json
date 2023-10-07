@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\GitWorkerCode\\DigitaPlatform\\DigitaPlatform.IDataAccess\\DigitaPlatform.IDataAccess.csproj",
+      "projectUniqueName": "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.IDataAccess\\DigitaPlatform.IDataAccess.csproj",
       "projectName": "DigitaPlatform.IDataAccess",
-      "projectPath": "F:\\GitWorkerCode\\DigitaPlatform\\DigitaPlatform.IDataAccess\\DigitaPlatform.IDataAccess.csproj",
+      "projectPath": "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.IDataAccess\\DigitaPlatform.IDataAccess.csproj",
       "packagesPath": "C:\\Users\\黄胖子\\.nuget\\packages\\",
-      "outputPath": "F:\\GitWorkerCode\\DigitaPlatform\\DigitaPlatform.IDataAccess\\obj\\",
+      "outputPath": "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.IDataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

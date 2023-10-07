@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+iOMFnfu6yqxBxQ2HS6obHHMZeYJeYXIIq153Y36kI2NytIK0WOiYEN7vHQFqEifUBgoJo4pwtfbOxQ2HR2Exw==",
+  "dgSpecHash": "bSMCvaW4PVNNpBqWROKtG0bN8TGSBVJ4QlZXhhLlRmILWXnOw8RjbpJuYXPQGBxH12aTB1wDusBzHN1AfXcqDg==",
   "success": true,
-  "projectFilePath": "F:\\GitWorkerCode\\DigitaPlatform\\DigitaPlatform.DeviceAccess\\DigitaPlatform.DeviceAccess.csproj",
+  "projectFilePath": "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.DeviceAccess\\DigitaPlatform.DeviceAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\黄胖子\\.nuget\\packages\\runtime.linux-arm.runtime.native.system.io.ports\\7.0.0\\runtime.linux-arm.runtime.native.system.io.ports.7.0.0.nupkg.sha512",
     "C:\\Users\\黄胖子\\.nuget\\packages\\runtime.linux-arm64.runtime.native.system.io.ports\\7.0.0\\runtime.linux-arm64.runtime.native.system.io.ports.7.0.0.nupkg.sha512",
