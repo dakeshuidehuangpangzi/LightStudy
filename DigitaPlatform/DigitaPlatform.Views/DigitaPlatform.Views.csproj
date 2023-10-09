@@ -8,8 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MvvmLightLibs" Version="5.4.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\DigitaPlatform.Assets\DigitaPlatform.Assets.csproj" />
     <ProjectReference Include="..\DigitaPlatform.Common\DigitaPlatform.Common.csproj" />
+    <ProjectReference Include="..\DigitaPlatform.DeviceAccess\DigitaPlatform.DeviceAccess.csproj" />
+    <ProjectReference Include="..\DigitaPlatform.Entities\DigitaPlatform.Entities.csproj" />
     <ProjectReference Include="..\DigitaPlatform.ViewModels\DigitaPlatform.ViewModels.csproj" />
   </ItemGroup>
 

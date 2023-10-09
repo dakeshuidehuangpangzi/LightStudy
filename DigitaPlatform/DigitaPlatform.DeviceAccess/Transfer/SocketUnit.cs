@@ -26,7 +26,7 @@ namespace DigitaPlatform.DeviceAccess.Transfer
         {
             try
             {
-                ip = props.FirstOrDefault(x => x.PropName == "IP")?.PropValue;
+                ip = props.FirstOrDefault(x => x.PropName == "Ip")?.PropValue;
                 int.TryParse(props.FirstOrDefault(x=>x.PropName == "Port")?.PropValue, out port);
                 return new Result();
             }

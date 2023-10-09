@@ -1,13 +1,28 @@
-﻿using System;
+﻿using DigitaPlatform.DeviceAccess.Base;
+using DigitaPlatform.DeviceAccess.Transfer;
+using DigitaPlatform.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DigitaPlatform.DeviceAccess.Execute.MITSUBISHI
+namespace DigitaPlatform.DeviceAccess.Execute
 {
     internal class Mitsubishi_3E: MitsubishiBase
     {
+        /// <summary>
+        /// 参数匹配设置
+        /// </summary>
+        /// <param name="props"></param>
+        /// <param name="tos"></param>
+        /// <returns></returns>
+        internal override Result Match(List<DevicePropItemEntity> props, List<TransferObject> tos)
+        {
+            var pr = props.Where(x => x.PropName == "Port" || x.PropName == "Ip").Select(x => x.PropValue).ToList();
+            return this.Match(props, tos, pr, "SocketUnit");
+        }
+
         /// <summary>
         /// 错误字典
         /// </summary>

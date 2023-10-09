@@ -74,11 +74,17 @@ namespace DigitaPlatform.DeviceAccess.Execute
             }
             return result;
         }
+        /// <summary>
+        /// 参数匹配设置
+        /// </summary>
+        /// <param name="props"></param>
+        /// <param name="tos"></param>
+        /// <returns></returns>
 
         internal virtual Result Match(List<DevicePropItemEntity> props, List<TransferObject> tos) => new Result();
 
         public virtual void Connect() { }
-        //public virtual Result Read(List<CommAddress> variables) => new Result();
+        public virtual Result Read(List<CommAddress> variables) => new Result();
         public virtual void ReadAsync() { }
         //public virtual Result Write(List<CommAddress> addresses) => new Result();
         public virtual void WriteAsync() { }

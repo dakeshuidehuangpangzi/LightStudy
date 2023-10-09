@@ -422,6 +422,33 @@
           "System.Xml.XDocument": "4.0.11"
         }
       },
+      "runtime.linux-arm.runtime.native.System.IO.Ports/7.0.0": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/linux-arm/native/libSystem.IO.Ports.Native.so": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          }
+        }
+      },
+      "runtime.linux-arm64.runtime.native.System.IO.Ports/7.0.0": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/linux-arm64/native/libSystem.IO.Ports.Native.so": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          }
+        }
+      },
+      "runtime.linux-x64.runtime.native.System.IO.Ports/7.0.0": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libSystem.IO.Ports.Native.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          }
+        }
+      },
       "runtime.native.System/4.0.0": {
         "type": "package",
         "dependencies": {
@@ -446,6 +473,16 @@
         },
         "runtime": {
           "lib/netstandard1.0/_._": {}
+        }
+      },
+      "runtime.native.System.IO.Ports/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "runtime.linux-arm.runtime.native.System.IO.Ports": "7.0.0",
+          "runtime.linux-arm64.runtime.native.System.IO.Ports": "7.0.0",
+          "runtime.linux-x64.runtime.native.System.IO.Ports": "7.0.0",
+          "runtime.osx-arm64.runtime.native.System.IO.Ports": "7.0.0",
+          "runtime.osx-x64.runtime.native.System.IO.Ports": "7.0.0"
         }
       },
       "runtime.native.System.Net.Http/4.0.1": {
@@ -485,6 +522,24 @@
         },
         "runtime": {
           "lib/netstandard1.0/_._": {}
+        }
+      },
+      "runtime.osx-arm64.runtime.native.System.IO.Ports/7.0.0": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/osx-arm64/native/libSystem.IO.Ports.Native.dylib": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          }
+        }
+      },
+      "runtime.osx-x64.runtime.native.System.IO.Ports/7.0.0": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/osx-x64/native/libSystem.IO.Ports.Native.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          }
         }
       },
       "System.AppContext/4.1.0": {
@@ -1033,6 +1088,35 @@
             "rid": "unix"
           },
           "runtimes/win/lib/netstandard1.3/System.IO.MemoryMappedFiles.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.IO.Ports/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "runtime.native.System.IO.Ports": "7.0.0"
+        },
+        "compile": {
+          "lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/net6.0/System.IO.Ports.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/net6.0/System.IO.Ports.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
@@ -2363,6 +2447,31 @@
           "bin/placeholder/DigitaPlatform.Common.dll": {}
         }
       },
+      "DigitaPlatform.DeviceAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "DigitaPlatform.Common": "1.0.0",
+          "DigitaPlatform.Entities": "1.0.0",
+          "System.IO.Ports": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DigitaPlatform.DeviceAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DigitaPlatform.DeviceAccess.dll": {}
+        }
+      },
+      "DigitaPlatform.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/DigitaPlatform.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DigitaPlatform.Entities.dll": {}
+        }
+      },
       "DigitaPlatform.Models/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -2933,6 +3042,54 @@
         "netstandard.library.nuspec"
       ]
     },
+    "runtime.linux-arm.runtime.native.System.IO.Ports/7.0.0": {
+      "sha512": "CBvgRaF+M0xGLDv2Geb/0v0LEADheH8aK72GRAUJdnqnJVsQO60ki1XO8M3keEhnjm+T5NvLm41pNXAVYAPiSg==",
+      "type": "package",
+      "path": "runtime.linux-arm.runtime.native.system.io.ports/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "runtime.linux-arm.runtime.native.system.io.ports.7.0.0.nupkg.sha512",
+        "runtime.linux-arm.runtime.native.system.io.ports.nuspec",
+        "runtimes/linux-arm/native/libSystem.IO.Ports.Native.so",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "runtime.linux-arm64.runtime.native.System.IO.Ports/7.0.0": {
+      "sha512": "5VCyRCtCIYU8FR/W8oo7ouFuJ8tmAg9ddsuXhfCKZfZrbaVZSKxkmNBa6fxkfYPueD0jQfOvwFBmE5c6zalCSw==",
+      "type": "package",
+      "path": "runtime.linux-arm64.runtime.native.system.io.ports/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "runtime.linux-arm64.runtime.native.system.io.ports.7.0.0.nupkg.sha512",
+        "runtime.linux-arm64.runtime.native.system.io.ports.nuspec",
+        "runtimes/linux-arm64/native/libSystem.IO.Ports.Native.so",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "runtime.linux-x64.runtime.native.System.IO.Ports/7.0.0": {
+      "sha512": "DV9dWDUs23OoZqMWl5IhLr3D+b9koDiSHQxFKdYgWnQbnthv8c/yDjrlrI8nMrDc71RAKCO8jlUojzuPMX04gg==",
+      "type": "package",
+      "path": "runtime.linux-x64.runtime.native.system.io.ports/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "runtime.linux-x64.runtime.native.system.io.ports.7.0.0.nupkg.sha512",
+        "runtime.linux-x64.runtime.native.system.io.ports.nuspec",
+        "runtimes/linux-x64/native/libSystem.IO.Ports.Native.so",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "runtime.native.System/4.0.0": {
       "sha512": "QfS/nQI7k/BLgmLrw7qm7YBoULEvgWnPI+cYsbfCVFTW8Aj+i8JhccxcFMu1RWms0YZzF+UHguNBK4Qn89e2Sg==",
       "type": "package",
@@ -2959,6 +3116,21 @@
         "lib/netstandard1.0/_._",
         "runtime.native.system.io.compression.4.1.0.nupkg.sha512",
         "runtime.native.system.io.compression.nuspec"
+      ]
+    },
+    "runtime.native.System.IO.Ports/7.0.0": {
+      "sha512": "L4Ivegqc3B0Fee7VifFy2JST9nndm+uvJ0viLIZUaImDfnr+JmRin9Tbqd56KuMtm0eVxHpNOWZBPtKrA/1h5Q==",
+      "type": "package",
+      "path": "runtime.native.system.io.ports/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "runtime.native.system.io.ports.7.0.0.nupkg.sha512",
+        "runtime.native.system.io.ports.nuspec",
+        "useSharedDesignerContext.txt"
       ]
     },
     "runtime.native.System.Net.Http/4.0.1": {
@@ -3001,6 +3173,38 @@
         "lib/netstandard1.0/_._",
         "runtime.native.system.security.cryptography.4.0.1.nupkg.sha512",
         "runtime.native.system.security.cryptography.nuspec"
+      ]
+    },
+    "runtime.osx-arm64.runtime.native.System.IO.Ports/7.0.0": {
+      "sha512": "jFwh4sKSXZ7al5XrItEO4GdGWa6XNxvNx+LhEHjrSzOwawO1znwJ+Dy+VjnrkySX9Qi4bnHNLoiqOXbqMuka4g==",
+      "type": "package",
+      "path": "runtime.osx-arm64.runtime.native.system.io.ports/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "runtime.osx-arm64.runtime.native.system.io.ports.7.0.0.nupkg.sha512",
+        "runtime.osx-arm64.runtime.native.system.io.ports.nuspec",
+        "runtimes/osx-arm64/native/libSystem.IO.Ports.Native.dylib",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "runtime.osx-x64.runtime.native.System.IO.Ports/7.0.0": {
+      "sha512": "X4LrHEfke/z9+z+iuVr35NlkhdZldY8JGNMYUN+sfPK/U/6TcE+vP44I0Yv0ir1v0bqIzq3v6Qdv1c1vmp8s4g==",
+      "type": "package",
+      "path": "runtime.osx-x64.runtime.native.system.io.ports/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "runtime.osx-x64.runtime.native.system.io.ports.7.0.0.nupkg.sha512",
+        "runtime.osx-x64.runtime.native.system.io.ports.nuspec",
+        "runtimes/osx-x64/native/libSystem.IO.Ports.Native.dylib",
+        "useSharedDesignerContext.txt"
       ]
     },
     "System.AppContext/4.1.0": {
@@ -4346,6 +4550,41 @@
         "runtimes/win/lib/netstandard1.3/System.IO.MemoryMappedFiles.dll",
         "system.io.memorymappedfiles.4.0.0.nupkg.sha512",
         "system.io.memorymappedfiles.nuspec"
+      ]
+    },
+    "System.IO.Ports/7.0.0": {
+      "sha512": "0nWQjM5IofaIGpvkifN+LLuYwBG6BHlpmphLhhOJepcW12G8qToGuNDRgBzeTVBZzp33wVsESSZ8hUOCfq+8QA==",
+      "type": "package",
+      "path": "system.io.ports/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.IO.Ports.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.IO.Ports.targets",
+        "lib/net462/System.IO.Ports.dll",
+        "lib/net462/System.IO.Ports.xml",
+        "lib/net6.0/System.IO.Ports.dll",
+        "lib/net6.0/System.IO.Ports.xml",
+        "lib/net7.0/System.IO.Ports.dll",
+        "lib/net7.0/System.IO.Ports.xml",
+        "lib/netstandard2.0/System.IO.Ports.dll",
+        "lib/netstandard2.0/System.IO.Ports.xml",
+        "runtimes/unix/lib/net6.0/System.IO.Ports.dll",
+        "runtimes/unix/lib/net6.0/System.IO.Ports.xml",
+        "runtimes/unix/lib/net7.0/System.IO.Ports.dll",
+        "runtimes/unix/lib/net7.0/System.IO.Ports.xml",
+        "runtimes/win/lib/net6.0/System.IO.Ports.dll",
+        "runtimes/win/lib/net6.0/System.IO.Ports.xml",
+        "runtimes/win/lib/net7.0/System.IO.Ports.dll",
+        "runtimes/win/lib/net7.0/System.IO.Ports.xml",
+        "system.io.ports.7.0.0.nupkg.sha512",
+        "system.io.ports.nuspec",
+        "useSharedDesignerContext.txt"
       ]
     },
     "System.IO.UnmanagedMemoryStream/4.0.1": {
@@ -7349,6 +7588,16 @@
       "path": "../DigitaPlatform.Common/DigitaPlatform.Common.csproj",
       "msbuildProject": "../DigitaPlatform.Common/DigitaPlatform.Common.csproj"
     },
+    "DigitaPlatform.DeviceAccess/1.0.0": {
+      "type": "project",
+      "path": "../DigitaPlatform.DeviceAccess/DigitaPlatform.DeviceAccess.csproj",
+      "msbuildProject": "../DigitaPlatform.DeviceAccess/DigitaPlatform.DeviceAccess.csproj"
+    },
+    "DigitaPlatform.Entities/1.0.0": {
+      "type": "project",
+      "path": "../DigitaPlatform.Entities/DigitaPlatform.Entities.csproj",
+      "msbuildProject": "../DigitaPlatform.Entities/DigitaPlatform.Entities.csproj"
+    },
     "DigitaPlatform.Models/1.0.0": {
       "type": "project",
       "path": "../DigitaPlatform.Models/DigitaPlatform.Models.csproj",
@@ -7364,7 +7613,10 @@
     "net6.0-windows7.0": [
       "DigitaPlatform.Assets >= 1.0.0",
       "DigitaPlatform.Common >= 1.0.0",
-      "DigitaPlatform.ViewModels >= 1.0.0"
+      "DigitaPlatform.DeviceAccess >= 1.0.0",
+      "DigitaPlatform.Entities >= 1.0.0",
+      "DigitaPlatform.ViewModels >= 1.0.0",
+      "MvvmLightLibs >= 5.4.1.1"
     ]
   },
   "packageFolders": {
@@ -7407,6 +7659,12 @@
             "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.Common\\DigitaPlatform.Common.csproj": {
               "projectPath": "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.Common\\DigitaPlatform.Common.csproj"
             },
+            "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.DeviceAccess\\DigitaPlatform.DeviceAccess.csproj": {
+              "projectPath": "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.DeviceAccess\\DigitaPlatform.DeviceAccess.csproj"
+            },
+            "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.Entities\\DigitaPlatform.Entities.csproj": {
+              "projectPath": "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.Entities\\DigitaPlatform.Entities.csproj"
+            },
             "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.ViewModels\\DigitaPlatform.ViewModels.csproj": {
               "projectPath": "F:\\GitWorkerCode\\LightStudy\\DigitaPlatform\\DigitaPlatform.ViewModels\\DigitaPlatform.ViewModels.csproj"
             }
@@ -7422,6 +7680,12 @@
     "frameworks": {
       "net6.0-windows7.0": {
         "targetAlias": "net6.0-windows",
+        "dependencies": {
+          "MvvmLightLibs": {
+            "target": "Package",
+            "version": "[5.4.1.1, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

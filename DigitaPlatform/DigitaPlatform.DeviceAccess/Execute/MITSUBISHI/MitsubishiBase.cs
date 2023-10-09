@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DigitaPlatform.DeviceAccess.Execute.MITSUBISHI
+namespace DigitaPlatform.DeviceAccess.Execute
 {
     internal abstract class MitsubishiBase: ExecuteObject
     {
@@ -42,18 +42,42 @@ namespace DigitaPlatform.DeviceAccess.Execute.MITSUBISHI
 
         };
 
+
+        public Result<byte> Write(List<MitsublshiAddress> addresses)//确认输入的数据类型是什么
+        {
+            this.TransferObject.Connect();
+            return new Result<byte>();
+        }
+
+        public override Result Read(List<CommAddress> variables)
+        {
+           var readtable= variables.Where(x=>x is MitsublshiAddress).ToList();//找到所有的
+            //计算地址
+            List<MitsublshiAddress> address = new List<MitsublshiAddress>();
+           foreach (var addrs in readtable) 
+            {
+                address.Add(ConvetAddress_3E((MitsublshiAddress)addrs).Data);
+            }
+
+           return new Result<List<MitsublshiAddress>>() {Data=address };
+        }
+        public override void Connect()
+        {
+            this.TransferObject.Connect();
+        }
+
         #region 地址解析
         /// <summary>
         /// 算出地址的参数内容
         /// </summary>
         /// <param name="name"></param>
         /// <returns></returns>
-        public Result<MitsublshiAddress> ConvetAddress_3E(string name)
+        public Result<MitsublshiAddress> ConvetAddress_3E(MitsublshiAddress name)
         {
-            string findAddress = name.ToUpper();
+            string findAddress = name.VariableName.ToUpper();
             bool isdouble = false;
 
-            var addType = Enum.GetNames(typeof(MitsublshiAddress));   
+            var addType = Enum.GetNames(typeof(MitsublshiAreaTypes));   
 
             var find = addType.ToList().FindIndex(X =>
             {
@@ -78,14 +102,16 @@ namespace DigitaPlatform.DeviceAccess.Execute.MITSUBISHI
             MitsublshiAddress address = new MitsublshiAddress()
             {
                 VariableName = findAddress,
+                Length = name.Length,
                 AreaType = (MitsublshiAreaTypes)Enum.GetValues(typeof(MitsublshiAreaTypes)).GetValue(find),
                 DataType = binary[addType[find]].DataType,
                 Format = binary[addType[find]].Format,
+                Value = name?.Value,
                 AreaAddress = isdouble==true? Convert.ToInt32(findAddress.Substring(2), binary[addType[find]].Format) 
                 : Convert.ToInt32(findAddress.Substring(1), binary[addType[find]].Format),
             };
             return  new Result<MitsublshiAddress>() { Data= address };
         }
-        #endregion
+        #endregion      
     }
 }

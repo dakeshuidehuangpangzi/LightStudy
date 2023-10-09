@@ -16,6 +16,8 @@ namespace DigitaPlatform.DeviceAccess.Base
 
         /// <summary>变量字节数据</summary>
         public byte[] ValueBytes { get; set; }
+
+        public object Value { get; set; }
         //变量集合
         List<CommAddress> Variables { get; set; } = new List<CommAddress>();
 

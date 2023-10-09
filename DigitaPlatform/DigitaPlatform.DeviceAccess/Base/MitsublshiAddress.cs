@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DigitaPlatform.DeviceAccess.Base
 {
-    internal class MitsublshiAddress:CommAddress
+    public class MitsublshiAddress:CommAddress
     {
         public MitsublshiAddress()
         {
@@ -37,7 +37,7 @@ namespace DigitaPlatform.DeviceAccess.Base
 
     }
 
-    internal class DataTypes
+    public class DataTypes
     {
         /// <summary>
         /// 数据的类型，0代表按字，1代表按位

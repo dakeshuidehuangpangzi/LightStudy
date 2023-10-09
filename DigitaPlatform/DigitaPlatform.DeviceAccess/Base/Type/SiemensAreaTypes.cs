@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DigitaPlatform.DeviceAccess.Base
 {
-    internal enum SiemensAreaTypes
+    public enum SiemensAreaTypes
     {
         INPUT = 0x81,
         OUTPUT = 0x82,

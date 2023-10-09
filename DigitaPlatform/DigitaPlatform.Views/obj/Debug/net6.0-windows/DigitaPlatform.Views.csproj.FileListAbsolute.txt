@@ -54,3 +54,7 @@ F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform.Views\obj\Debug\net6.0
 F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform.Views\obj\Debug\net6.0-windows\refint\DigitaPlatform.Views.dll
 F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform.Views\obj\Debug\net6.0-windows\DigitaPlatform.Views.pdb
 F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform.Views\obj\Debug\net6.0-windows\ref\DigitaPlatform.Views.dll
+F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform.Views\bin\Debug\net6.0-windows\DigitaPlatform.DeviceAccess.dll
+F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform.Views\bin\Debug\net6.0-windows\DigitaPlatform.Entities.dll
+F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform.Views\bin\Debug\net6.0-windows\DigitaPlatform.DeviceAccess.pdb
+F:\GitWorkerCode\LightStudy\DigitaPlatform\DigitaPlatform.Views\bin\Debug\net6.0-windows\DigitaPlatform.Entities.pdb
