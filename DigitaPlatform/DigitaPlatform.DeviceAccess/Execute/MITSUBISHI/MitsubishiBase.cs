@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -12,33 +13,33 @@ namespace DigitaPlatform.DeviceAccess.Execute
     {
         Dictionary <string, DataTypes> binary=new Dictionary<string, DataTypes>()
         {
-            {"X",new DataTypes{ DataType=1,Format=16 } },
-            {"Y",new DataTypes{ DataType=1,Format=16 } },
-            {"M",new DataTypes{ DataType=1,Format=10 } },
-            {"L",new DataTypes{ DataType=1,Format=10 } },
-            {"F",new DataTypes{ DataType=1,Format=10 } },
-            {"V",new DataTypes{ DataType=1,Format=10 } },
-            {"B",new DataTypes{ DataType=1,Format=16 } },
-            {"D",new DataTypes{ DataType=0,Format=10 } },
-            {"W",new DataTypes{ DataType=0,Format=16 } },
-            {"TS",new DataTypes{ DataType=0,Format=10 } },
-            {"TN",new DataTypes{ DataType=1,Format=10 } },
-            {"SS",new DataTypes{ DataType=1,Format=10 } },
-            {"SC",new DataTypes{ DataType=1,Format=10 } },
-            {"SN",new DataTypes{ DataType=1,Format=10 } },
-            {"CS",new DataTypes{ DataType=1,Format=10 } },
-            {"CC",new DataTypes{ DataType=1,Format=10 } },
-            {"CN",new DataTypes{ DataType=1,Format=10 } },
-            {"SB",new DataTypes{ DataType=0,Format=16 } },
-            {"SW",new DataTypes{ DataType=0,Format=16 } },
-            {"S",new DataTypes{ DataType=0,Format=10 } },
-            {"DX",new DataTypes{ DataType=0,Format=16 } },
-            {"DY",new DataTypes{ DataType=0,Format=16 } },
-            {"SM",new DataTypes{ DataType=1,Format=10 } },
-            {"SD",new DataTypes{ DataType=0,Format=10 } },
-            {"Z",new DataTypes{ DataType=1,Format=10 } },
-            {"R",new DataTypes{ DataType=0,Format=10 } },
-            {"ZR",new DataTypes{ DataType=0,Format=10 } },
+            {"X",new DataTypes{ IsByte=1,Format=16 } },
+            {"Y",new DataTypes{ IsByte=1,Format=16 } },
+            {"M",new DataTypes{ IsByte=1,Format=10 } },
+            {"L",new DataTypes{ IsByte=1,Format=10 } },
+            {"F",new DataTypes{ IsByte=1,Format=10 } },
+            {"V",new DataTypes{ IsByte=1,Format=10 } },
+            {"B",new DataTypes{ IsByte=1,Format=16 } },
+            {"D",new DataTypes{ IsByte=0,Format=10 } },
+            {"W",new DataTypes{ IsByte=0,Format=16 } },
+            {"TS",new DataTypes{ IsByte=0,Format=10 } },
+            {"TN",new DataTypes{ IsByte=1,Format=10 } },
+            {"SS",new DataTypes{ IsByte=1,Format=10 } },
+            {"SC",new DataTypes{ IsByte=1,Format=10 } },
+            {"SN",new DataTypes{ IsByte=1,Format=10 } },
+            {"CS",new DataTypes{ IsByte=1,Format=10 } },
+            {"CC",new DataTypes{ IsByte=1,Format=10 } },
+            {"CN",new DataTypes{ IsByte=1,Format=10 } },
+            {"SB",new DataTypes{ IsByte=0,Format=16 } },
+            {"SW",new DataTypes{ IsByte=0,Format=16 } },
+            {"S",new DataTypes{ IsByte=0,Format=10 } },
+            {"DX",new DataTypes{ IsByte=0,Format=16 } },
+            {"DY",new DataTypes{ IsByte=0,Format=16 } },
+            {"SM",new DataTypes{ IsByte=1,Format=10 } },
+            {"SD",new DataTypes{ IsByte=0,Format=10 } },
+            {"Z",new DataTypes{ IsByte=1,Format=10 } },
+            {"R",new DataTypes{ IsByte=0,Format=10 } },
+            {"ZR",new DataTypes{ IsByte=0,Format=10 } },
 
         };
 
@@ -68,11 +69,11 @@ namespace DigitaPlatform.DeviceAccess.Execute
 
         #region 地址解析
         /// <summary>
-        /// 算出地址的参数内容
+        /// 根据变量名和需要读取的数据类型进行变化  
         /// </summary>
         /// <param name="name"></param>
         /// <returns></returns>
-        public Result<MitsublshiAddress> ConvetAddress_3E(MitsublshiAddress name)
+        public Result<MitsublshiAddress> ConvetAddress_3E(CommAddress name)
         {
             string findAddress = name.VariableName.ToUpper();
             bool isdouble = false;
@@ -104,11 +105,15 @@ namespace DigitaPlatform.DeviceAccess.Execute
                 VariableName = findAddress,
                 Length = name.Length,
                 AreaType = (MitsublshiAreaTypes)Enum.GetValues(typeof(MitsublshiAreaTypes)).GetValue(find),
-                DataType = binary[addType[find]].DataType,
+                IsByte = binary[addType[find]].IsByte,
                 Format = binary[addType[find]].Format,
+                DataType = name.DataType,
                 Value = name?.Value,
-                AreaAddress = isdouble==true? Convert.ToInt32(findAddress.Substring(2), binary[addType[find]].Format) 
+                AreaAddress = isdouble == true ? Convert.ToInt32(findAddress.Substring(2), binary[addType[find]].Format)
                 : Convert.ToInt32(findAddress.Substring(1), binary[addType[find]].Format),
+                VariableType = SetVariableType(name.DataType),
+               // Length= Marshal.SizeOf(SetVariableType(name.DataType))/2
+
             };
             return  new Result<MitsublshiAddress>() { Data= address };
         }

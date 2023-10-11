@@ -34,12 +34,12 @@ namespace DigitaPlatform.Views
             var data = communication.GetExecuteObject(devices);
             data.Data.Connect();
             List<CommAddress> address = new List<CommAddress>();
-            address.Add(new MitsublshiAddress() { VariableName = "D100", Length = 1 });
-            address.Add(new MitsublshiAddress() { VariableName = "D101", Length = 1 });
-            address.Add(new MitsublshiAddress() { VariableName = "D102", Length = 1 });
-            address.Add(new MitsublshiAddress() { VariableName = "D103", Length = 1 });
-            address.Add(new MitsublshiAddress() { VariableName = "D104", Length = 1 });
-            address.Add(new MitsublshiAddress() { VariableName = "D105", Length = 1 });
+            address.Add(new MitsublshiAddress() { VariableName = "M100", Length = 20 ,DataType= "bool" });
+            address.Add(new MitsublshiAddress() { VariableName = "D101", Length = 1, DataType = "int" });
+            address.Add(new MitsublshiAddress() { VariableName = "D102", Length = 1, DataType = "int" });
+            address.Add(new MitsublshiAddress() { VariableName = "D103", Length = 1, DataType = "int" });
+            address.Add(new MitsublshiAddress() { VariableName = "D104", Length = 1, DataType = "int" });
+            address.Add(new MitsublshiAddress() { VariableName = "D105", Length = 1, DataType = "int" });
 
             var   us= data.Data.Read(address);
         }

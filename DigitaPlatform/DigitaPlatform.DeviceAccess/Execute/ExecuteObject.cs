@@ -134,5 +134,29 @@ namespace DigitaPlatform.DeviceAccess.Execute
 
             return temp;
         }
+
+        public virtual Type SetVariableType(string DataType)
+        {
+            Type retype = null;
+            string[] type = new string[8] 
+            {
+                "string","float","double","int","uint","bool","short","ushort"
+            };
+
+            if (!type.Contains(DataType)) throw new Exception("输入的数据类型不存在，请检查");
+           
+            switch (DataType) 
+            {
+                case "string": retype = typeof(string);break;
+                case "double": retype = typeof(double); break;
+                case "int": retype = typeof(int); break;
+                case "float": retype = typeof(float); break;
+                case "uint": retype = typeof(uint); break;
+                case "short": retype = typeof(short); break;
+                case "ushort": retype = typeof(ushort); break;
+                case "bool": retype = typeof(bool); break;
+            }
+            return retype;
+        }
     }
 }

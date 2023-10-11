@@ -147,6 +147,51 @@ namespace DigitaPlatform.DeviceAccess.Transfer
             }
         }
 
+        internal override Result<List<byte>> SendAndReceived(List<byte> req,int timeout, Func<byte[], int> calcLen)
+        {
+            lock (socketLock)
+            {
+                Result<List<byte>> result = new Result<List<byte>>();
+                try
+                {
+                    socket.ReceiveTimeout = timeout;
+
+                    if (req != null)
+                        socket.Send(req.ToArray(), 0, req.Count, SocketFlags.None);
+
+                    // 获取报文头字节
+                    byte[] data = new byte[10];
+                    socket.Receive(data, 0, 10, SocketFlags.None);
+                    result.Data = new List<byte>(data);
+
+                    int dataLen = 0;
+                    if (calcLen != null)
+                        dataLen = calcLen(data);
+                    if (dataLen == 0)
+                        throw new Exception("获取数据长度失败");
+
+                    // 剩余的报文字节
+                    data = new byte[dataLen];
+                    socket.Receive(data, 0, dataLen, SocketFlags.None);
+                    result.Data.AddRange(data);
+                }
+                catch (SocketException se)
+                {
+                    result.Status = false;
+                    if (se.SocketErrorCode == SocketError.TimedOut)
+                    {
+                        result.Message = "未获取到响应数据，接收超时";
+                    }
+                }
+                catch (Exception ex)
+                {
+                    result.Status = false;
+                    result.Message = ex.Message;
+                }
+                return result;
+            }
+        }
+
         internal override Result Close()
         {
             try

@@ -40,6 +40,7 @@ namespace DigitaPlatform.DeviceAccess.Transfer
         // 委托，作用是
         internal virtual Result<List<byte>> SendAndReceived(List<byte> req, int len1, int timeout, Func<byte[], int> calcLen = null)
             => new Result<List<byte>>(false, "NULL");
-
+        internal virtual Result<List<byte>> SendAndReceived(List<byte> req, int timeout, Func<byte[], int> calcLen = null)
+           => new Result<List<byte>>(false, "NULL");
     }
 }

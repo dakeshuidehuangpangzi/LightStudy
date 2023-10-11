@@ -16,7 +16,6 @@ namespace DigitaPlatform.DeviceAccess.Base
         {
             AreaType = mi.AreaType;
             AreaAddress = mi.AreaAddress;
-            Length = mi.Length;
             DataType = mi.DataType;
             Format = mi.Format;
         }
@@ -24,12 +23,6 @@ namespace DigitaPlatform.DeviceAccess.Base
         public MitsublshiAreaTypes AreaType { get; set; }
         /// <summary>地址位置</summary>
         public int AreaAddress { get; set; }
-        /// <summary>长度</summary>
-        public int Length { get; set; }
-        /// <summary>
-        /// 数据的类型，0代表按字，1代表按位
-        /// </summary>
-        public byte DataType { get; set; }
         /// <summary>
         /// 指示地址是10进制，还是16进制的
         /// </summary>
@@ -42,7 +35,7 @@ namespace DigitaPlatform.DeviceAccess.Base
         /// <summary>
         /// 数据的类型，0代表按字，1代表按位
         /// </summary>
-        public byte DataType { get; set; }
+        public byte IsByte { get; set; }
         /// <summary>
         /// 指示地址是10进制，还是16进制的
         /// </summary>
