@@ -20,14 +20,12 @@ namespace DigitaPlatform.DeviceAccess.Base
         public string DataType { get ; set; }
         /// <summary>长度</summary>
         public int Length { get; set; }
-        /// <summary></summary>
+        /// <summary>读取的值</summary>
         public int ReadNumber { get; set; }
-        /// <summary>
-        /// 数据的类型，0代表按字，1代表按位
-        /// </summary>
+        /// <summary>数据的类型，0代表按字，1代表按位</summary>
         public byte IsByte { get; set; }
         //变量集合
-        List<CommAddress> Variables { get; set; } = new List<CommAddress>();
+        public List<CommAddress> Variables { get; set; } = new List<CommAddress>();
 
     }
 }
