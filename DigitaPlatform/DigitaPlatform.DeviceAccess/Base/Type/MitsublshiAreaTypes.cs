@@ -25,7 +25,7 @@ namespace DigitaPlatform.DeviceAccess.Base
         /// <summary>数据寄存器</summary>
         D = 0XA8,
         /// <summary>链接寄存器</summary>
-        //W = 0XB4,
+        W = 0XB4,
         /// <summary>定时器  触点</summary>
         //TS = 0XC1,
         /// <summary>定时器  线圈</summary>

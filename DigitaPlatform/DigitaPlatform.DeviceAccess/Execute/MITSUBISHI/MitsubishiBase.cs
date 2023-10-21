@@ -112,8 +112,6 @@ namespace DigitaPlatform.DeviceAccess.Execute
                 AreaAddress = isdouble == true ? Convert.ToInt32(findAddress.Substring(2), binary[addType[find]].Format)
                 : Convert.ToInt32(findAddress.Substring(1), binary[addType[find]].Format),
                 VariableType = SetVariableType(name.DataType),
-               // Length= Marshal.SizeOf(SetVariableType(name.DataType))/2
-
             };
             return  new Result<MitsublshiAddress>() { Data= address };
         }

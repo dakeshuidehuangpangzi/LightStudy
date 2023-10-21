@@ -18,6 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyProductAttribute("DigitaPlatform.DeviceAccess")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DigitaPlatform.DeviceAccess")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+[assembly: System.Runtime.CompilerServices.InternalsVisibleTo("ConsoleApp1")]
 
 // 由 MSBuild WriteCodeFragment 类生成。
 

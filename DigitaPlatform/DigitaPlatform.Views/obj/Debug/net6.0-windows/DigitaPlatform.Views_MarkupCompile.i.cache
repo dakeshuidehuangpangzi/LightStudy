@@ -16,5 +16,5 @@ TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 2062113729031
 MainView.xaml;Pages\MonitorPage.xaml;
 
-True
+False
 

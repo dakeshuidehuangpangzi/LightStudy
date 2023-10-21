@@ -34,14 +34,19 @@ namespace DigitaPlatform.Views
             var data = communication.GetExecuteObject(devices);
             data.Data.Connect();
             List<CommAddress> address = new List<CommAddress>();
-            address.Add(new MitsublshiAddress() { VariableName = "M100", Length = 20 ,DataType= "bool" });
-            address.Add(new MitsublshiAddress() { VariableName = "D101", Length = 1, DataType = "int" });
-            address.Add(new MitsublshiAddress() { VariableName = "D102", Length = 1, DataType = "int" });
-            address.Add(new MitsublshiAddress() { VariableName = "D103", Length = 1, DataType = "int" });
-            address.Add(new MitsublshiAddress() { VariableName = "D104", Length = 1, DataType = "int" });
-            address.Add(new MitsublshiAddress() { VariableName = "D105", Length = 1, DataType = "int" });
+            address.Add(new MitsublshiAddress() { VariableName = "D100", Length = 5,DataType= "int" });
+            //address.Add(new MitsublshiAddress() { VariableName = "W100", Length = 5, DataType = "int" });
+           // address.Add(new MitsublshiAddress() { VariableName = "D200", Length = 5, DataType = "int" });
+           // address.Add(new MitsublshiAddress() { VariableName = "D300", Length = 5, DataType = "int" });
+           // address.Add(new MitsublshiAddress() { VariableName = "M100", Length = 2, DataType = "int" });
+            //address.Add(new MitsublshiAddress() { VariableName = "M100", Length = 2, DataType = "int" });
 
             var   us= data.Data.Read(address);
+            //Sus = data.Data.MultiRead(address);
+
+            var writed = data.Data.Write<short>(new CommAddress() {VariableName= "D100",
+            DataType= "short"}, new List<short>() { 123, 101, 123 });
+
         }
         Communication communication = Communication.Create();
         private void Button_Click(object sender, RoutedEventArgs e)
