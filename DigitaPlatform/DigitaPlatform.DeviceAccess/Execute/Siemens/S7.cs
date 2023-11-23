@@ -164,29 +164,27 @@ namespace DigitaPlatform.DeviceAccess.Execute.S7
         public List<byte> GetParameterItemByte(SiemensAddress sa)
         {
             List<byte> result = new List<byte>() { 0X12,0X0A,0X10};
-            result.Add(0X02);
-            paramBytes.Add((byte)(sa.ByteCount / 256 % 256));
-            paramBytes.Add((byte)(sa.ByteCount % 256));
+            result.Add(0X02);//数据类型（word 04，byte 02 ，05 int ，Dword 06）//后期需要修改下
+            result.Add((byte)(sa.ByteCount / 256 % 256));
+            result.Add((byte)(sa.ByteCount % 256));
             // DB块编号   200Smart V区  DB1
-            paramBytes.Add((byte)(sa.DBNumber / 256 % 256));
-            paramBytes.Add((byte)(sa.DBNumber % 256));
+            result.Add((byte)(sa.DBNumber / 256 % 256));
+            result.Add((byte)(sa.DBNumber % 256));
             // 数据区域
-            paramBytes.Add((byte)sa.AreaType);  //81 I   82  Q   83  M   84DB
+            result.Add((byte)sa.AreaType);  //81 I   82  Q   83  M   84DB
                                                 // 地址
                                                 // Byte:100   Bit:0
 
             //int address = startAddr * 8 + bitAddr;
             int addr = (sa.ByteAddress << 3);
-            paramBytes.Add((byte)(addr / 256 / 256 % 256));
-            paramBytes.Add((byte)(addr / 256 % 256));
-            paramBytes.Add((byte)(addr % 256));
+            result.Add((byte)(addr / 256 / 256 % 256));
+            result.Add((byte)(addr / 256 % 256));
+            result.Add((byte)(addr % 256));
 
-            return paramBytes;
+            return result;
 
         }
         #region 握手通讯
-
-
         private  Result connect()
         {
             Result result = new Result();

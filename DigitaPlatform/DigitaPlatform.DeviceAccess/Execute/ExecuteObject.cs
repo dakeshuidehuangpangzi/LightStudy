@@ -91,6 +91,7 @@ namespace DigitaPlatform.DeviceAccess.Execute
 
         public virtual Result MultiRead(List<CommAddress> parameters) => new Result();
         public virtual Result Write<T>(CommAddress Prameter, List<T> values)=>new Result();
+        public virtual Result Write(List<CommAddress> Pramete) => new Result();
         public virtual Result Dispose()
         {
             if (this.TransferObject == null) return new Result();

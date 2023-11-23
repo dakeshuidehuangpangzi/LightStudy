@@ -29,10 +29,10 @@
   <ItemGroup>
     <Folder Include="Execute\Modbus\" />
     <Folder Include="Execute\Mqtt\" />
-    <Folder Include="Execute\S7\" />
+    <Folder Include="Execute\Omron\" />
   </ItemGroup>
 
 	<ItemGroup>
-		<InternalsVisibleTo Include="ConsoleApp1"/>
+		<InternalsVisibleTo Include="ConsoleApp1" />
 	</ItemGroup>
 </Project>
